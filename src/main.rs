@@ -76,6 +76,7 @@ fn main() {
         TimerFuture::new(Duration::new(2, 0)).await;
         println!("Maxwell's Computer: done!");
     });
+    println!("Maxwell's Computer: outside spawn");
     drop(spawner);
     executor.run();
 }
